@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #fffe78;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body section {
+  width: 100%;
+  height: 100%;
+}
+
+body section:nth-child(1) {
+  height: 100%;
+}
+
+body section:nth-child(1) .landing-page {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 200vh;
+}
+
+body section:nth-child(1) .landing-page .presentation {
+  position: fixed;
+  top: 50%;
+  left: 300px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 1px solid red;
+  width: 45%;
+}
+
+body section:nth-child(1) .landing-page .presentation p {
+  font-size: 15px;
+}
+
+body section:nth-child(1) .landing-page .presentation h1 {
+  font-size: 5em;
+}
+
+body section:nth-child(1) .landing-page .presentation.notFixed {
+  position: relative;
+}
+
+body section:nth-child(1) .appearingCard {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  width: 390px;
+  height: 860px;
+  background-color: white;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px;
+  margin-right: 50px;
+}
+
+body section:nth-child(1) .appearingCard h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body section:nth-child(1) .appearingCard p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body section:nth-child(2) {
+  position: absolute;
+  top: 200vh;
+}
+/*# sourceMappingURL=style.css.map */
